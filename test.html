@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8fafb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .header h2 {
+            margin: 0;
+        }
+        .btn {
+            background: black;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .todo-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            background: #f4f4f4;
+        }
+        .todo-item span {
+            font-weight: bold;
+        }
+        .tag {
+            font-size: 12px;
+            padding: 5px;
+            border-radius: 5px;
+            background: #d1e7ff;
+        }
+        .tag.work { background: #ffddd2; }
+        .tag.personal { background: #d2f7d2; }
+        .tag.grocery { background: #fdf6b2; }
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+            background: #eaeaea;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>Todo</h2>
+            <button class="btn">Create Reminder</button>
+        </div>
+
+        <div class="todo-item">
+            <span>📷 Organize photo shoot</span>
+            <span class="tag work">Work</span>
+        </div>
+        <div class="todo-item">
+            <span>🛒 Buy milk</span>
+            <span class="tag grocery">Grocery</span>
+        </div>
+        <div class="todo-item">
+            <span>📅 Set up meeting w/ Globex</span>
+            <span class="tag work">Work</span>
+        </div>
+        <div class="todo-item">
+            <span>🛂 Renew passport</span>
+            <span class="tag personal">Personal</span>
+        </div>
+        <div class="todo-item">
+            <span>📝 Checklist LA trip</span>
+            <span class="tag work">Work</span>
+        </div>
+
+        <h3>Completed</h3>
+
+        <div class="todo-item completed">
+            <span>🍽️ Book dinner with Luis</span>
+            <span class="tag personal">Personal</span>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
